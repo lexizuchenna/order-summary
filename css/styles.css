@@ -1,0 +1,155 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display';
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-position-y: -100px;
+
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: -1px 3px 9px 3px rgba(114,128,167,0.75);
+    -webkit-box-shadow: -1px 3px 9px 3px rgba(114,128,167,0.75);
+    -moz-box-shadow: -1px 3px 9px 3px rgba(114,128,167,0.75);
+}
+
+.box {
+    flex-direction: column;
+    max-width: 350px;
+    background-color: #fff;
+}
+
+.image-container {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box-body {
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    margin: 15px 0;
+}
+
+.box-order {
+    background-color: var(--very-pale-blue);
+    justify-content: space-between;
+    min-width: 300px;
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 15px 10px;
+}
+
+.left {
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.text-container {
+    margin-left: 20px;
+}
+
+.left h4 {
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.left p {
+    margin: 5px 0;
+}
+
+.right {
+    margin-right: 7px;
+}
+
+a {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.box-buttons {
+    margin: 20px 0 25px 0;
+    width: 300px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    outline: none;
+    font-weight: 700;
+    padding: 8px 0;
+    cursor: pointer;
+
+}
+
+button:nth-child(1){
+    background-color: var(--bright-blue);
+    border: 1px solid var(--bright-blue);
+    color: #fff;
+}
+button:nth-child(1):hover{
+    opacity: 0.8;
+}
+
+button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin: 10px 0;
+    color: var(--dark-blue);
+    opacity: 0.8;
+}
+button:nth-child(2):hover{
+    opacity: 1;
+}
